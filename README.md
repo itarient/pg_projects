@@ -11,3 +11,7 @@ and jsonb_all_object_keys(). They print names (keys) of all JSON subobjects.
 It's an example of after inser trigger in which the UPDATE statement
 is executed on the some linked table.
 
+## refresh-matviews-in-all-dbs
+
+It's a simple utility to refresh all materialized views on the
+selected database server.
