@@ -38,7 +38,7 @@ def get_matview_list(cur) -> list:
     """
     ret = []
 
-    cur.execute("select schemaname, matviewname from pg_matviews order by 1, 2")
+    cur.execute("select quote_ident(schemaname), quote_ident(matviewname) from pg_matviews order by 1, 2")
     for rec in cur:
         ret.append(rec[0] + "." + rec[1])
 
